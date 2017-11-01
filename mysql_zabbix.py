@@ -16,13 +16,13 @@ import logging
 logging.basicConfig(filename='/var/log/monitor/mysql.log', level=logging.ERROR)
 
 # -----mysql-------------------
-mysql_user = 'zabbix'
-mysql_password = 'zabbix_123,./'
-host_tk = {'10.1.8.72': 3306, '10.1.196.120': 3306, '10.1.206.181': 3306, '10.1.52.194': 3306}
-host_us = {'10.2.10.11': 3306, '10.2.10.12': 3306, '10.2.10.13': 3306, '10.2.10.14': 3306}
-host_mm = {'10.4.10.11': 3306, '10.4.10.12': 3306, '10.4.10.13': 3306, '10.4.10.14': 3306}
-host_flkf = {'10.3.10.11': 3306, '10.3.10.12': 3306, '10.3.10.13': 3306, '10.3.10.14': 3306}
-host_hk = {'10.5.10.12': 3306, '10.5.10.13': 3306, '10.5.10.11': 3306, '10.5.10.14': 3306}
+mysql_user = ''
+mysql_password = ''
+host_tk = {'10.1.8.72': 3306}
+host_us = {}
+host_mm = {}
+host_flkf = {}
+host_hk = {}
 
 host_list = [host_tk, host_us, host_mm, host_flkf, host_hk]
 
