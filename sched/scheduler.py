@@ -117,7 +117,7 @@ def job_main():
         else:
             items = get_config.get_times(section)
             if items['type'] == 'mysql':
-                _kwargs = {'type': items['type'], 'mysql_host':items['host'],'mysql_port':items['port'],'mysql_db':items['db'],'mysql_sql':items['sql']}
+                _kwargs = {'type': items['type'], 'mysql_host':items['host'],'mysql_port':int(items['port']),'mysql_db':items['db'],'mysql_sql':items['sql']}
                 try:
                     if items['sche_type'] == 'cron':
                         sched.add_job(job_func,'cron',**job_items(items,'cron',section,_kwargs))
